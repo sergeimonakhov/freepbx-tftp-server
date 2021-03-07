@@ -1,0 +1,14 @@
+[Unit]
+Description=FreePBX tftp server
+After=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=10
+
+WorkingDirectory=/opt/freepbx-tftp-server
+ExecStart=/opt/freepbx-tftp-server/freepbx-tftp-server -workdir=/tftpboot
+
+[Install]
+WantedBy=multi-user.target
