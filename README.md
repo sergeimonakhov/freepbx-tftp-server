@@ -15,7 +15,7 @@ FreePBX server syncs with Active Directory(AD). Binding users to phones is carri
 ```bash
 Usage of ./freebpx-tftp-server:
   -freepbx-conf string
-    	Set path to freepbx db connection config file. Default: /etc/freepbx.conf (default "/etc/freepbx.conf")
+    	Set path to freepbx db connection config file (default "/etc/freepbx.conf")
   -sep-template-file string
     	Set path to sep template file (default "./sep-cisco.cnf.xml.tpl")
   -workdir string

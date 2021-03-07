@@ -168,7 +168,7 @@ func readHandler(filename string, rf io.ReaderFrom) error {
 func init() {
 	flag.StringVar(&workdir, "workdir", "/tftpboot", "Set working directory")
 	flag.StringVar(&sepTeplateFilePath, "sep-template-file", "./sep-cisco.cnf.xml.tpl", "Set path to sep template file")
-	flag.StringVar(&freepbxConf, "freepbx-conf", "/etc/freepbx.conf", "Set path to freepbx db connection config file. Default: /etc/freepbx.conf")
+	flag.StringVar(&freepbxConf, "freepbx-conf", "/etc/freepbx.conf", "Set path to freepbx db connection config file")
 }
 
 func main() {
