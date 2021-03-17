@@ -68,9 +68,11 @@ func getPhoneSetting(filename string) (*PhoneSetting, error) {
       ON userman_users.default_extension=sip.id AND sip.keyword='secret'
       WHERE userman_users.fax=?
       ORDER BY userman_users.default_extension
+	  LIMIT 1
 	  `
 
 	err := db.QueryRow(query, filename).Scan(&ps.DisplayName, &ps.PhonePassword, &ps.PhoneNumber)
+
 	if err != nil {
 		return &ps, err
 	}
