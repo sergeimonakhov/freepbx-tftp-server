@@ -8,6 +8,7 @@ FreePBX server syncs with Active Directory(AD). Binding users to phones is carri
 
 ## Requirements:
 
+* [go >= 1.16](https://golang.org)
 * [FreePBX >= 15](https://www.freepbx.org)
 
 ## Flags:
