@@ -26,7 +26,7 @@ var (
 //PhoneSetting struct
 type PhoneSetting struct {
 	DisplayName, PhonePassword string
-	PhoneNumber                int
+	PhoneNumber                string
 }
 
 func getDBConnectionParams() (string, error) {
